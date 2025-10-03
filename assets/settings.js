@@ -41,18 +41,52 @@ async function findAll(){
 }
 
 document.addEventListener("DOMContentLoaded", async function(){
-    let token = await checkToken();
+    token = await checkToken();
     let stations = await findAll();
-    
-    console.log(token);
-    let results = stations.filter(function(cur){
-        return cur.name.startsWith(inputHome.value);
-    });
-    
-    results.forEach(function(n) 
-    {
-        let p = document.createElement("p");
-        p.innerText = n.name;
-        document.body.append(p);
-    });
+
+    document.getElementById("homeSubmit").addEventListener("submit",function(event){
+        event.preventDefault();
+        const stationsDiv = document.getElementById('stations');
+        stationsDiv.innerHTML = "";
+        
+        let results = stations.filter(function(cur){
+            return cur.name.toLowerCase().startsWith(inputHome.value.toLowerCase());
+        })
+        results.forEach(function(n){
+            let p = document.createElement("p");
+            p.innerText = n.name;
+            p.addEventListener("click", function(){
+                console.log(n);
+                localStorage.setItem("home", JSON.stringify(n));
+                //localStorage.setItem("homeName", JSON.stringify(n.name));
+                //localStorage.setItem("homeGid", JSON.stringify(n.gid));
+                let test = JSON.parse(localStorage.getItem("home"));
+                console.log(test.name)
+            })
+            stationsDiv.append(p);
+        });
+    })
+
+    document.getElementById("schoolSubmit").addEventListener("submit",function(event){
+        event.preventDefault();
+        const stationsDiv = document.getElementById('stations');
+        stationsDiv.innerHTML = "";
+        
+        let results = stations.filter(function(cur){
+            return cur.name.toLowerCase().startsWith(inputSchool.value.toLowerCase());
+        })
+        results.forEach(function(n){
+            let p = document.createElement("p");
+            p.innerText = n.name;
+            p.addEventListener("click", function(){
+                console.log(n);
+                localStorage.setItem("school", JSON.stringify(n));
+                //localStorage.setItem("homeName", JSON.stringify(n.name));
+                //localStorage.setItem("homeGid", JSON.stringify(n.gid));
+                let test = JSON.parse(localStorage.getItem("school"));
+                console.log(test.name)
+            })
+            stationsDiv.append(p);
+        });
+    })
 })
