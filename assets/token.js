@@ -7,9 +7,14 @@ let now = new Date();
 
     async function checkToken() {
         
-        let token = localStorage.getItem("token") == null ? setToken() : JSON.parse(localStorage.getItem("token"));
+        let token = localStorage.getItem("token") == "" ? setToken() : JSON.parse(localStorage.getItem("token"));
+        console.log("1");
         console.log(token.expires_in - ((now - new Date(token.time)) / 1000));
-
+        if(((now - new Date(token.time)) / 1000) > token.expires_in){
+             token = setToken();
+        }else{
+            console.log("fresh token");
+        }
         return token;
     }
 

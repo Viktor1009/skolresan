@@ -82,14 +82,16 @@ async function updateInfo(data){
             let trip = document.createElement("div");
             trip.classList.add("trip");
             trip.innerHTML = `<h4 class="origin">${leg.origin.stopPoint.name}</h4>
-                                <h4 class="time">${leg.estimatedDepartureTime.slice(11, 16)}</h4>`;
+                                <h4 class="time">${leg.estimatedDepartureTime.slice(11, 16)}</h4>
+                                <h4 class="transport">${leg.serviceJourney.line.shortName}</h4>`;
             test.append(trip);
             lastStop = leg;
         });
     let trip = document.createElement("div");
     trip.classList.add("trip");
         trip.innerHTML = `<h4 class="origin">${lastStop.destination.stopPoint.name}</h4>
-                        <h4 class="time">${lastStop.estimatedArrivalTime.slice(11, 16)}</h4>`;
+                        <h4 class="time">${lastStop.estimatedArrivalTime.slice(11, 16)}</h4>
+                        <h4 class="transport">${lastStop.serviceJourney.line.shortName}</h4>`;
         console.log(test);
         test.append(trip);
             display.append(test);

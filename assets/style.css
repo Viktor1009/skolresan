@@ -69,7 +69,4 @@ main div#home h2 {
 }
 #modal #trip .trip-example .trip {
   overflow: hidden;
-}
-#modal #trip .trip-example .trip::after {
-  content: ">";
 }/*# sourceMappingURL=style.css.map */
