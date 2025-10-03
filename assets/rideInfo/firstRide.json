@@ -1,0 +1,88 @@
+{
+    "reconstructionReference": "¶HKI¶T$A=1@O=Brunnsparken, Göteborg@L=1760005@a=128@$A=1@O=Marklandsgatan, Göteborg@L=4760005@a=128@$202508291151$202508291210$Bus   16$$1$$$$$$¶KC¶#VE#2#CF#100#CA#0#CM#0#SICT#0#AM#97#AM2#0#RT#15#¶KRCC¶#VE#1#",
+    "detailsReference": "eyJUIjpbeyJSIjoiMXw1NTMzfDB8ODB8MjkwODIwMjUiLCJPIjoxMCwiRCI6MTgsIkkiOjAsIkNMIjpmYWxzZSwiUENMIjpmYWxzZX1dfQ",
+    "tripLegs": [
+        {
+            "origin": {
+                "stopPoint": {
+                    "gid": "9022014001760005",
+                    "name": "Brunnsparken, Göteborg",
+                    "platform": "C1",
+                    "stopArea": {
+                        "gid": "9021014001760000",
+                        "name": "Brunnsparken",
+                        "latitude": 57.70694042,
+                        "longitude": 11.96784532,
+                        "tariffZone1": {
+                            "gid": "9081014200003000",
+                            "name": "Zon A",
+                            "number": 3000,
+                            "shortName": "A"
+                        }
+                    }
+                },
+                "plannedTime": "2025-08-29T11:51:00.0000000+02:00",
+                "estimatedTime": "2025-08-29T11:50:00.0000000+02:00",
+                "estimatedOtherwisePlannedTime": "2025-08-29T11:50:00.0000000+02:00",
+                "notes": []
+            },
+            "destination": {
+                "stopPoint": {
+                    "gid": "9022014004760005",
+                    "name": "Marklandsgatan, Göteborg",
+                    "platform": "E",
+                    "stopArea": {
+                        "gid": "9021014004760000",
+                        "name": "Marklandsgatan",
+                        "latitude": 57.67440146,
+                        "longitude": 11.93603918,
+                        "tariffZone1": {
+                            "gid": "9081014200003000",
+                            "name": "Zon A",
+                            "number": 3000,
+                            "shortName": "A"
+                        }
+                    }
+                },
+                "plannedTime": "2025-08-29T12:10:00.0000000+02:00",
+                "estimatedTime": "2025-08-29T12:08:00.0000000+02:00",
+                "estimatedOtherwisePlannedTime": "2025-08-29T12:08:00.0000000+02:00",
+                "notes": []
+            },
+            "isCancelled": false,
+            "isPartCancelled": false,
+            "serviceJourney": {
+                "gid": "9015014501600101",
+                "direction": "Högsbohöjd",
+                "directionDetails": {
+                    "fullDirection": "Högsbohöjd",
+                    "shortDirection": "Högsbohöjd"
+                },
+                "number": "101",
+                "line": {
+                    "shortName": "16",
+                    "designation": "16",
+                    "isWheelchairAccessible": true,
+                    "name": "Buss 16",
+                    "backgroundColor": "#007c4f",
+                    "foregroundColor": "#ffff50",
+                    "borderColor": "#007c4f",
+                    "transportMode": "bus",
+                    "transportSubMode": "none"
+                }
+            },
+            "notes": [],
+            "plannedDepartureTime": "2025-08-29T11:51:00.0000000+02:00",
+            "plannedArrivalTime": "2025-08-29T12:10:00.0000000+02:00",
+            "plannedDurationInMinutes": 19,
+            "estimatedDepartureTime": "2025-08-29T11:50:00.0000000+02:00",
+            "estimatedArrivalTime": "2025-08-29T12:08:00.0000000+02:00",
+            "estimatedDurationInMinutes": 18,
+            "estimatedOtherwisePlannedArrivalTime": "2025-08-29T12:08:00.0000000+02:00",
+            "estimatedOtherwisePlannedDepartureTime": "2025-08-29T11:50:00.0000000+02:00",
+            "journeyLegIndex": 0
+        }
+    ],
+    "connectionLinks": [],
+    "isDeparted": false
+}

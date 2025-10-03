@@ -1,0 +1,88 @@
+{
+    "reconstructionReference": "¶HKI¶T$A=1@O=Brunnsparken, Göteborg@L=1760003@a=128@$A=1@O=Marklandsgatan, Göteborg@L=4760001@a=128@$202508291150$202508291218$Spå    3$$1$$$$$$¶KC¶#VE#2#CF#100#CA#0#CM#0#SICT#0#AM#97#AM2#0#RT#15#¶KRCC¶#VE#1#",
+    "detailsReference": "eyJUIjpbeyJSIjoiMXwxNzE3NnwxNXw4MHwyOTA4MjAyNSIsIk8iOjExLCJEIjozMCwiSSI6MCwiQ0wiOmZhbHNlLCJQQ0wiOmZhbHNlfV19",
+    "tripLegs": [
+        {
+            "origin": {
+                "stopPoint": {
+                    "gid": "9022014001760003",
+                    "name": "Brunnsparken, Göteborg",
+                    "platform": "B1",
+                    "stopArea": {
+                        "gid": "9021014001760000",
+                        "name": "Brunnsparken",
+                        "latitude": 57.70694042,
+                        "longitude": 11.96784532,
+                        "tariffZone1": {
+                            "gid": "9081014200003000",
+                            "name": "Zon A",
+                            "number": 3000,
+                            "shortName": "A"
+                        }
+                    }
+                },
+                "plannedTime": "2025-08-29T11:50:00.0000000+02:00",
+                "estimatedTime": "2025-08-29T11:50:00.0000000+02:00",
+                "estimatedOtherwisePlannedTime": "2025-08-29T11:50:00.0000000+02:00",
+                "notes": []
+            },
+            "destination": {
+                "stopPoint": {
+                    "gid": "9022014004760001",
+                    "name": "Marklandsgatan, Göteborg",
+                    "platform": "A",
+                    "stopArea": {
+                        "gid": "9021014004760000",
+                        "name": "Marklandsgatan",
+                        "latitude": 57.67440146,
+                        "longitude": 11.93603918,
+                        "tariffZone1": {
+                            "gid": "9081014200003000",
+                            "name": "Zon A",
+                            "number": 3000,
+                            "shortName": "A"
+                        }
+                    }
+                },
+                "plannedTime": "2025-08-29T12:18:00.0000000+02:00",
+                "estimatedTime": "2025-08-29T12:19:00.0000000+02:00",
+                "estimatedOtherwisePlannedTime": "2025-08-29T12:19:00.0000000+02:00",
+                "notes": []
+            },
+            "isCancelled": false,
+            "isPartCancelled": false,
+            "serviceJourney": {
+                "gid": "9015014500305036",
+                "direction": "Marklandsgatan",
+                "directionDetails": {
+                    "fullDirection": "Marklandsgatan",
+                    "shortDirection": "Marklandsgatan"
+                },
+                "number": "5036",
+                "line": {
+                    "shortName": "3",
+                    "designation": "3",
+                    "isWheelchairAccessible": true,
+                    "name": "Spårvagn 3",
+                    "backgroundColor": "#0071c1",
+                    "foregroundColor": "#ffffff",
+                    "borderColor": "#0071c1",
+                    "transportMode": "tram",
+                    "transportSubMode": "none"
+                }
+            },
+            "notes": [],
+            "plannedDepartureTime": "2025-08-29T11:50:00.0000000+02:00",
+            "plannedArrivalTime": "2025-08-29T12:18:00.0000000+02:00",
+            "plannedDurationInMinutes": 28,
+            "estimatedDepartureTime": "2025-08-29T11:50:00.0000000+02:00",
+            "estimatedArrivalTime": "2025-08-29T12:19:00.0000000+02:00",
+            "estimatedDurationInMinutes": 29,
+            "estimatedOtherwisePlannedArrivalTime": "2025-08-29T12:19:00.0000000+02:00",
+            "estimatedOtherwisePlannedDepartureTime": "2025-08-29T11:50:00.0000000+02:00",
+            "journeyLegIndex": 0
+        }
+    ],
+    "connectionLinks": [],
+    "isDeparted": false
+}
