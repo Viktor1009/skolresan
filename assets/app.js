@@ -1,7 +1,9 @@
 var token = "";
 var showRoute;
-var schoolGid = "9021014001760000"; //Brunnsparken
-var homeGid = "9021014004760000"; //Marklandsgatan
+const home = JSON.parse(localStorage.getItem("home")); 
+const school = JSON.parse(localStorage.getItem("school"));
+var homeGid = home.gid;
+var schoolGid = school.gid
 const allStopUrl = "https://ext-api.vasttrafik.se/pr/v4/stop-areas"
 //var all = findAll();
 var htmlTrips;
