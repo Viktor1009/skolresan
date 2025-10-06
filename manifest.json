@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "TYPE NAME",
+  "version": "1.0",
+  "description": "SKRIV BESKRVNING",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  }
+}
