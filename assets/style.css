@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-body, main {
+body {
   margin: 0;
   padding: 0;
+  width: 500px;
+  height: 470px;
 }
 
 #logo {
@@ -12,8 +14,8 @@ body, main {
 }
 
 main {
-  max-width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
