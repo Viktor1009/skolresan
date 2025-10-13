@@ -1,7 +1,5 @@
 let token = ""
 var showRoute;
-var schoolGid = "9021014001760000"; //Brunnsparken
-var homeGid = "9021014004760000"; //Marklandsgatan
 const allStopUrl = "https://ext-api.vasttrafik.se/pr/v4/stop-areas"
 //var all = findAll();
 let searchedHome;
@@ -9,9 +7,11 @@ let searchedSchool;
 var htmlTrips;
 const date = Date().slice(16,21); // time right now
 
-/*document.addEventListener("DOMContentLoaded"), async function() {
-    // här ska skrivas kod för att hämta en token
-}*/
+
+
+
+
+
 
 async function findTravel(from, to){
     let url = "https://ext-api.vasttrafik.se/pr/v4/journeys?originGid=" + from + "&destinationGid=" + to;
@@ -58,14 +58,17 @@ document.addEventListener("DOMContentLoaded", async function(){
             p.addEventListener("click", function(){
                 console.log(n);
                 localStorage.setItem("home", JSON.stringify(n));
-                //localStorage.setItem("homeName", JSON.stringify(n.name));
-                //localStorage.setItem("homeGid", JSON.stringify(n.gid));
-                let test = JSON.parse(localStorage.getItem("home"));
-                console.log(test.name)
+                let home = JSON.parse(localStorage.getItem("home"));
+                console.log(home.name)
+                const homeStation = document.getElementById("homeStation")
+                homeStation.innerText = JSON.parse(localStorage.getItem("home")).name;
             })
             stationsDiv.append(p);
         });
     })
+
+    
+
 
     document.getElementById("schoolSubmit").addEventListener("submit",function(event){
         event.preventDefault();
@@ -83,9 +86,13 @@ document.addEventListener("DOMContentLoaded", async function(){
                 localStorage.setItem("school", JSON.stringify(n));
                 //localStorage.setItem("homeName", JSON.stringify(n.name));
                 //localStorage.setItem("homeGid", JSON.stringify(n.gid));
-                let test = JSON.parse(localStorage.getItem("school"));
-                console.log(test.name)
+                let away = JSON.parse(localStorage.getItem("school"));
+                console.log(away.name);
+                const schoolStation = document.getElementById("schoolStation")
+                schoolStation.innerText = JSON.parse(localStorage.getItem("away")).name;
             })
+
+
             stationsDiv.append(p);
         });
     })
